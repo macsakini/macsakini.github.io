@@ -3,16 +3,31 @@ layout: splash
 author_profile: true
 ---
 
-
-<h1 align="center">Ler's do some Deep learning</h1>
+<!-- 
+<h1 align="center">Top Highlights</h1> -->
 
 <div class="cards">
-  <div class="card">BERT RL</div>
-  <div class="card">City Skylines</div>
-  <div class="card">Option Pricing</div>
-  <div class="card">Fractals Crack</div>
-  <div class="card">Blue Locator</div>
-  <div class="card">Sixers</div>
+  <div class="card">
+    <h5>BERT RL</h5>
+    <p>This is a natural language processing model built to make analysis.</p>
+  </div>
+  <div class="card">
+    <h5>City Skylines</h5>
+    <p>City skylines is a GIS project built with deep learning capabilities to analyse and make viable predictions on city trends.</p>
+  </div>
+  <div class="card">
+    <h5>Option Pricing</h5>
+  </div>
+  <div class="card">
+    <h5>Fractals Crack</h5>
+  </div>
+  <div class="card">
+    <h5>Blue Locator</h5>
+  </div>
+  <div class="card">
+    <h5>Sixers</h5>
+    <p>This is a natural language processing model built to make analysis.</p>
+  </div>
 </div>
 
 <style>
@@ -21,7 +36,6 @@ author_profile: true
   background-color: black;
   color: white;
   padding: 1rem;
-  height: 4rem;
 }
 
 .cards {
@@ -41,3 +55,4 @@ author_profile: true
   .cards { grid-template-columns: repeat(3, 1fr); }
 }
 </style>
+
