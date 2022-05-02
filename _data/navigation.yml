@@ -4,12 +4,12 @@ main:
     url: /_pages/home/
   - title: "Blog"
     url: /
-  - title: "CV"
+  - title: "Resume"
     url: /_pages/cv/
   - title: "Portfolio"
     url: /_pages/portfolio/
   - title: "Publications"
     url: /_pages/publications/
   - title: "Contact Me"
-    url: /_pages/book/
+    url: /_pages/contact/
   
