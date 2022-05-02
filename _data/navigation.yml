@@ -2,11 +2,14 @@
 main:
   - title: "Home"
     url: /_pages/home/
-  - title: "Code"
+  - title: "Blog"
     url: /
+  - title: "CV"
+    url: /_pages/cv/
   - title: "Portfolio"
     url: /_pages/portfolio/
-  - title: "Book Session"
+  - title: "Publications"
+    url: /_pages/publications/
+  - title: "Contact Me"
     url: /_pages/book/
-  - title: "Sitemap"
-    url: /_pages/sitemap/
+  

@@ -106,7 +106,7 @@ analytics:
 author:
   name             : "Mac Maxwell"
   avatar           : "https://avatars.githubusercontent.com/u/47692036?s=400&u=102797acf8ca76fa31a3bcf38afd98e238168b37&v=4" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Mathematician and Software Developer."
+  bio              : "Mathematician and Software Developer. Aspiring member of the LMS."
   location         : "Nairobi, Kenya."
   #email            : "macsakini@hotmail.com"
   links:
@@ -116,18 +116,18 @@ author:
     - label: "https://www.rarelane.co.uk"
       icon: "fas fa-fw fa-link"
       url:  "https://www.rarelane.co.uk"
-    - label: "macmaxwell"
-      icon: "fab fa-fw fa-twitter-square"
-      # url: "https://twitter.com/macmaxwell"
+    - label: "Linkedin"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/macsakini/"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
       # url: "https://facebook.com/"
     - label: "Mac Maxwell"
       icon: "fab fa-fw fa-github"
       url:  "https://github.com/macsakini"
-    - label: "Instagram"
+    - label: "Researchgate"
       icon: "fab fa-fw fa-instagram"
-      # url: "https://instagram.com/"
+      url:  "https://www.researchgate.net/profile/Mac-Maxwell"
 
 # Site Footer
 footer:
@@ -230,6 +230,7 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
+  - jekyll-pdf-embed
 
 # mimic GitHub Pages with --safe
 whitelist:
@@ -238,6 +239,7 @@ whitelist:
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
+  
 
 
 # Archives
