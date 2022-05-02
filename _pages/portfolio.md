@@ -4,7 +4,7 @@ author_profile: true
 classes: wide
 ---
 <p>
-    <img align="center" src="https://github-readme-stats.vercel.app/api?username=macsakini&show_icons=true&locale=en" alt="macsakini"/>
+    <img align="center" width = "100%" src="https://github-readme-stats.vercel.app/api?username=macsakini&show_icons=true&locale=en" alt="macsakini"/>
 </p>
 
 
@@ -13,7 +13,7 @@ classes: wide
 
 <br>
 
-<p><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=macsakini&show_icons=true&locale=en&layout=compact" alt="macsakini" /></p>
+<p><img align="center" width = "100%" src="https://github-readme-stats.vercel.app/api/top-langs?username=macsakini&show_icons=true&locale=en&layout=compact" alt="macsakini" /></p>
 
 
 <!-- <h3> Github Statistics</h3>
