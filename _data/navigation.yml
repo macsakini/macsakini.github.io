@@ -6,7 +6,7 @@ main:
     url: /
   - title: "Portfolio"
     url: /_pages/portfolio/
-  - title: "Book"
+  - title: "Book Session"
     url: /_pages/book/
   - title: "Sitemap"
     url: /_pages/sitemap/
