@@ -1,0 +1,746 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Option Pricing   Mac Code</title>
+<meta name="description" content="Option Analysis and Prediction using Fast Fourier Transform and Levy Alpha Stable Distributions">
+
+
+  <meta name="author" content="Mac Maxwell">
+  
+  <meta property="article:author" content="Mac Maxwell">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Mac Code">
+<meta property="og:title" content="Option Pricing">
+<meta property="og:url" content="http://localhost:4000/Option-Pricing/">
+
+
+  <meta property="og:description" content="Option Analysis and Prediction using Fast Fourier Transform and Levy Alpha Stable Distributions">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2022-04-24T00:00:00+03:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/Option-Pricing/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "Mac Maxwell",
+      "url": "http://localhost:4000/"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Mac Code Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single wide">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+          <a class="site-logo" href="/"><img src="https://media.istockphoto.com/photos/abstract-3d-render-of-triangle-picture-id1289515110?b=1&k=20&m=1289515110&s=170667a&w=0&h=NM9B-P3evH-Go1mZ1GtWFQZ4Hqtipuu90EO5ceRBeho=" alt="Mac Code"></a>
+        
+        <a class="site-title" href="/">
+          Mac Code
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/_pages/home/">Home</a>
+            </li><li class="masthead__menu-item">
+              <a href="/index/">Code</a>
+            </li><li class="masthead__menu-item">
+              <a href="/_pages/portfolio/">Portfolio</a>
+            </li><li class="masthead__menu-item">
+              <a href="/_pages/book/">Book</a>
+            </li><li class="masthead__menu-item">
+              <a href="/_pages/sitemap/">Sitemap</a>
+            </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <i class="fas fa-search"></i>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+  
+    
+
+
+
+<nav class="breadcrumbs">
+  <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+    
+    
+    
+      
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="/" itemprop="item"><span itemprop="name">Home</span></a>
+
+          <meta itemprop="position" content="1" />
+        </li>
+        <span class="sep">/</span>
+      
+      
+        <li class="current">Option Pricing</li>
+      
+    
+  </ol>
+</nav>
+
+  
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person" class="h-card">
+
+  
+    <div class="author__avatar">
+      <a href="http://localhost:4000/">
+        <img src="https://avatars.githubusercontent.com/u/47692036?s=400&u=102797acf8ca76fa31a3bcf38afd98e238168b37&v=4" alt="Mac Maxwell" itemprop="image" class="u-photo">
+      </a>
+    </div>
+  
+
+  <div class="author__content">
+    <h3 class="author__name p-name" itemprop="name">
+      <a class="u-url" rel="me" href="http://localhost:4000/" itemprop="url">Mac Maxwell</a>
+    </h3>
+    
+      <div class="author__bio p-note" itemprop="description">
+        <p>Mathematician and Software Developer.</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name" class="p-locality">Nairobi, Kenya.</span>
+        </li>
+      
+
+      
+        
+          
+            <li><a href="mailto:macsakini@hotmail.com" rel="nofollow noopener noreferrer me"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">macsakini@hotmail.com</span></a></li>
+          
+        
+          
+            <li><a href="https://www.rarelane.co.uk" rel="nofollow noopener noreferrer me"><i class="fas fa-fw fa-link" aria-hidden="true"></i><span class="label">https://www.rarelane.co.uk</span></a></li>
+          
+        
+          
+        
+          
+        
+          
+            <li><a href="https://github.com/macsakini" rel="nofollow noopener noreferrer me"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">Mac Maxwell</span></a></li>
+          
+        
+          
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer me">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+  
+  </div>
+
+
+
+  <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Option Pricing">
+    <meta itemprop="description" content="Option Analysis and Prediction using Fast Fourier Transform and Levy Alpha Stable Distributions">
+    <meta itemprop="datePublished" content="2022-04-24T00:00:00+03:00">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title p-name" itemprop="headline">
+            <a href="http://localhost:4000/Option-Pricing/" class="u-url" itemprop="url">Option Pricing
+</a>
+          </h1>
+          
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          2 minute read
+        
+      </span>
+    
+  </p>
+
+
+        </header>
+      
+
+      <section class="page__content e-content" itemprop="text">
+        
+        <p>Option Analysis and Prediction using Fast Fourier Transform and Levy Alpha Stable Distributions</p>
+
+<p>This project uses a number of concepts.</p>
+
+<ul>
+  <li>
+    <p>Black Scholes model.</p>
+  </li>
+  <li>
+    <p>Capital Assets Pricing Model (CAPM).</p>
+  </li>
+  <li>
+    <p>Levy Alpha Stable Distributions.</p>
+  </li>
+  <li>
+    <p>Market Model.</p>
+  </li>
+  <li>
+    <p>Fourier and Inverse Fourier Transformations.</p>
+  </li>
+</ul>
+
+<p>The files of the project are all over the place but each file deals with a certain topic. I have also included a docx file explaining the entire theorem in the data folder.</p>
+
+<p>However the following concept can be critical to understand.</p>
+<ol>
+  <li>
+    <p>Options are regularly proced using the BS model.</p>
+  </li>
+  <li>
+    <p>Volatility in stock markets and securities are regularly functions of normal distributions according to a number of models.</p>
+  </li>
+</ol>
+
+<p><img src="https://user-images.githubusercontent.com/47692036/161438930-7d658922-079a-4a16-8634-f748ea50e9df.png" alt="image" />
+Figure 1.1 CAPM Model</p>
+
+<ol>
+  <li>
+    <p>Technical analysis incorporates normal distributions. This can also be seen in the thrid graph in the image above. The residuals are trying to get fit under a normal curve.</p>
+  </li>
+  <li>
+    <p>Beta Coefficient explains risk in a regression model of market prices with underlying asset.</p>
+  </li>
+  <li>
+    <p>Beta distributions can take different forms depending on the shape and scale parameters assigned to it. <strong>Bet coefficients are not related to beta distributions</strong></p>
+  </li>
+  <li>
+    <p>Prior analysis has shown that in some cases fitting a different distribution similar to the normal explains better the fractals and risk numbers in a market.</p>
+  </li>
+  <li>
+    <p>Levy Distributions are extracts of the stable distributions. According to wikipedia, beta distributions are not <strong>"”not analytically expressible, except for some parameter values”“</strong>. Normal distribution is also a stable distribution with an alpha = 2</p>
+  </li>
+  <li>
+    <p>This being so, - All stable distributions are infinitely divisible. - With the exception of the normal distribution (α = 2), stable distributions are leptokurtotic and heavy-tailed distributions.</p>
+  </li>
+  <li>
+    <p>The characteristic function φ(t) of any probability distribution is just the <strong>Fourier transform</strong> of its probability density function f(x).</p>
+  </li>
+  <li>
+    <p>The <strong>density function (pdf)</strong> is therefore the <strong>inverse Fourier transform</strong> or the <strong>fast fourier</strong> of the characteristic function.</p>
+  </li>
+</ol>
+
+<p><strong>Although the probability density function for a general stable distribution cannot be written analytically, the general characteristic function can be expressed analytically.</strong></p>
+
+<p>Having understoodm these ten simple facts. You already have a mind map of the whole paper.</p>
+
+<p>Instead of using normal use levy, but since levy does not have pdf, use fast fourier to find it. Fit the residuals of the market using the levy. Find the shape and scale parameters. Also the alpha and beta.</p>
+
+<p><img src="https://user-images.githubusercontent.com/47692036/161438872-1ab6ac8a-5684-4f11-801c-9321dfdf7de9.png" alt="image" />
+Figure 1.2 Dow Jones Levy Alpha Distribution</p>
+
+<h1 id="the-files">The files</h1>
+<ul>
+  <li>DJIA - Dow Jones</li>
+  <li>PF - Pfizer</li>
+  <li>fft - Fast Fourier Transform
+djia.rmd is an R file making analysis on the Down Jones index for stated period.
+pfe.rmd - analysis on pfizer stock for stated period.
+fft.py - is the fast fourier transform implemented.
+levystable.py -  is the levy stable distribution inside <strong>scipy</strong> library.
+hs.csv is a combined data file having side by side stocks of dow jones and pfizer.
+pfe.csv has only pfizer historical prices</li>
+</ul>
+
+<p><img src="https://user-images.githubusercontent.com/47692036/161438964-376587d3-d0e3-460f-815f-174ec2993158.png" alt="image" />
+Figure 1.3 Predictions made using regular BS model.</p>
+
+<p><img src="https://user-images.githubusercontent.com/47692036/161438984-9dd0e583-3b5d-4d0c-b91f-3a301b55fd8f.png" alt="image" />
+Figure 1.4 Predictions made using levy alpha.</p>
+
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time class="dt-published" datetime="2022-04-24T00:00:00+03:00">April 24, 2022</time></p>
+
+      </footer>
+
+      <section class="page__share">
+  
+    <h4 class="page__share-title">Share on</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?text=Option+Pricing%20http%3A%2F%2Flocalhost%3A4000%2FOption-Pricing%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2FOption-Pricing%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2FOption-Pricing%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/Linear-Algebra-Series/" class="pagination--pager" title="Linear Algebra Series
+">Previous</a>
+    
+    
+      <a href="/Monte-Carlo-Methods-2/" class="pagination--pager" title="Monte Carlo Methods 2
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h2 class="page__related-title">You may also enjoy</h2>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/Convex-Optimization/" rel="permalink">Convex Optimization
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          less than 1 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">The best solutions for each scenario. How better can we improve a system. One way of tackling this is through simulation.
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/Monte-Carlo-Simulations/" rel="permalink">Monte Carlo Simulations
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          2 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">What are Monte Carlo Simulation?
+
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/Monte-Carlo-Methods-2/" rel="permalink">Monte Carlo Methods 2
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          1 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Now, lets talk about something else apart from the binomial distribution. Say you have a circle, and you want to drop balls over it. One by one you drop a ba...</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/Linear-Algebra-Series/" rel="permalink">Linear Algebra Series
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          5 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Linear Algebra Series 1 - Introduction
+
+</p>
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+    </div>
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><form onsubmit="return googleCustomSearchExecute();" id="cse-search-box-form-id" role="search">
+    <label class="sr-only" for="cse-search-input-box-id">
+      Enter your search term...
+    </label>
+    <input type="search" id="cse-search-input-box-id" class="search-input" tabindex="-1" placeholder="Enter your search term..." />
+  </form>
+  <div id="results" class="results">
+    <gcse:searchresults-only></gcse:searchresults-only>
+  </div></div>
+
+      </div>
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2022 Mac Maxwell. Designed by <a href="https://jekyllrb.com" rel="nofollow">Rarelane Analytics</a></div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+<script>
+  (function () {
+    var cx = '';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+
+  function googleCustomSearchExecute() {
+    var input = document.getElementById('cse-search-input-box-id');
+    var element = google.search.cse.element.getElement('searchresults-only0');
+    if (input.value == '') {
+      element.clearAllResults();
+    } else {
+      element.execute(input.value);
+    }
+    return false;
+  }
+
+  
+</script>
+
+
+
+
+
+
+
+  </body>
+</html>

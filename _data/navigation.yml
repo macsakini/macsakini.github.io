@@ -1,0 +1,12 @@
+# main links
+main:
+  - title: "Home"
+    url: /_pages/home/
+  - title: "Code"
+    url: /index/
+  - title: "Portfolio"
+    url: /_pages/portfolio/
+  - title: "Book"
+    url: /_pages/book/
+  - title: "Sitemap"
+    url: /_pages/sitemap/
