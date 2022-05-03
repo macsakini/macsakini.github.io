@@ -3,8 +3,8 @@ layout: splash
 author_profile: true
 ---
 
-<!-- 
-<h1 align="center">Top Highlights</h1> -->
+
+<h1 align="center">Coming Soon ...</h1>
 
 <div class="cards">
   <div class="card">
