@@ -1,3 +1,6 @@
+---
+classes: wide
+---
 ```python
 #Importing dependancies
 import pandas as pd

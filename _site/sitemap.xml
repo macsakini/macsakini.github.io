@@ -57,6 +57,10 @@
 <lastmod>2022-05-01T00:00:00+03:00</lastmod>
 </url>
 <url>
+<loc>http://localhost:4000/BERT-Analysis/</loc>
+<lastmod>2022-05-03T00:00:00+03:00</lastmod>
+</url>
+<url>
 <loc>http://localhost:4000/_pages/contact/</loc>
 </url>
 <url>
@@ -82,6 +86,10 @@
 </url>
 <url>
 <loc>http://localhost:4000/page4/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/assets/cityskylines.pdf</loc>
+<lastmod>2022-05-04T09:23:59+03:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/assets/resume.pdf</loc>

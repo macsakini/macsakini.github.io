@@ -2,8 +2,6 @@
 layout: splash
 author_profile: true
 ---
-
-
 <h1 align="center">Coming Soon ...</h1>
 
 <div class="cards">
@@ -56,3 +54,7 @@ author_profile: true
 }
 </style>
 
+<br>
+<h1 align="center">Cities Skyline</h1>
+
+<iframe src="/assets/cityskylines.pdf" width="100%" height = "700px">
