@@ -1,7 +1,9 @@
 ---
-layout: splash
+layout: single
 author_profile: true
+classes: wide
 ---
+
 <h1 align="center">Coming Soon ...</h1>
 
 <div class="cards">
@@ -54,7 +56,49 @@ author_profile: true
 }
 </style>
 
+<h1 align="left">This section of the site is under construction ...</h1>
 <br>
-<h1 align="center">Cities Skyline</h1>
 
-<iframe src="/assets/cityskylines.pdf" width="100%" height = "700px">
+![City Skylines](/assets/images/cityskylines/Slide1.jpeg)
+
+Title 
+
+![City Skylines](/assets/images/cityskylines/Slide2.jpeg)
+
+Plain Map
+
+![City Skylines](/assets/images/cityskylines/Slide3.jpeg)
+
+Nairobi Borders defined
+
+![City Skylines](/assets/images/cityskylines/Slide4.jpeg)
+
+Defining road network
+
+![City Skylines](/assets/images/cityskylines/Slide5.jpeg)
+
+Adding roads to target locations
+
+![City Skylines](/assets/images/cityskylines/Slide6.jpeg)
+
+Defining target location.
+
+![City Skylines](/assets/images/cityskylines/Slide7.jpeg)
+
+Zoom to layer and add points of interest
+
+![City Skylines](/assets/images/cityskylines/Slide8.jpeg)
+
+Closer view of points and demographics.
+
+![City Skylines](/assets/images/cityskylines/Slide9.jpeg)
+
+Church point clicked.
+
+![City Skylines](/assets/images/cityskylines/Slide10.jpeg)
+
+Parsing scraped data to find purchasing power of location.
+
+![City Skylines](/assets/images/cityskylines/Slide11.jpeg)
+
+Establishing population, area and population density of area.

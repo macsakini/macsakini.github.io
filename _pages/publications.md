@@ -1,6 +1,7 @@
 ---
 layout: single
 author_profile: true
+toc: true
 # carousels:
 #   - images: 
 #     - image: /assets/slider/im1.png
