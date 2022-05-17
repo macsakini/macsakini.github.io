@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-05-17T07:50:10+03:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Mac Code</title><subtitle>Follow my journey through dirty code..</subtitle><author><name>Mac Maxwell</name></author><entry><title type="html">Monte Carlo Methods 2</title><link href="http://localhost:4000/linear%20algebra/Monte-Carlo-Methods-2/" rel="alternate" type="text/html" title="Monte Carlo Methods 2" /><published>2022-04-25T00:00:00+03:00</published><updated>2022-04-25T00:00:00+03:00</updated><id>http://localhost:4000/linear%20algebra/Monte-Carlo-Methods-2</id><content type="html" xml:base="http://localhost:4000/linear%20algebra/Monte-Carlo-Methods-2/">&lt;p&gt;Now, lets talk about something else apart from the binomial distribution. Say you have a circle, and you want to drop balls over it. One by one you drop a ball over the circle, say dish. The question is how many balls are gonna go inside it.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-05-17T08:23:35+03:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Mac Code</title><subtitle>Follow my journey through dirty code..</subtitle><author><name>Mac Maxwell</name></author><entry><title type="html">Monte Carlo Methods 2</title><link href="http://localhost:4000/linear%20algebra/Monte-Carlo-Methods-2/" rel="alternate" type="text/html" title="Monte Carlo Methods 2" /><published>2022-04-25T00:00:00+03:00</published><updated>2022-04-25T00:00:00+03:00</updated><id>http://localhost:4000/linear%20algebra/Monte-Carlo-Methods-2</id><content type="html" xml:base="http://localhost:4000/linear%20algebra/Monte-Carlo-Methods-2/">&lt;p&gt;Now, lets talk about something else apart from the binomial distribution. Say you have a circle, and you want to drop balls over it. One by one you drop a ball over the circle, say dish. The question is how many balls are gonna go inside it.&lt;/p&gt;
 
 &lt;p&gt;As a mathematician, anything that involves circles or curves or anything circul-ish should bring to your mind the symbol \(\pi\). PI is a lot of things but just understanding that somehow a circle would be involved makes the whole thing wrapped up. Next the field around the circle most cases is usually a square. Look at the diagram below.&lt;/p&gt;
 
@@ -541,6 +541,7 @@ The main two actions a stack performs is pushing and poping. You push something 
     &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
 &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h2 id=&quot;queues&quot;&gt;Queues&lt;/h2&gt;
 
 &lt;p&gt;The queue is just stacks wacky brother. Same concept except the queue is an actual groceries shop queue or the line at the hospital. So whoever walked in first, gets served first. This is an interesting principle called FIFO: First In First Out.&lt;/p&gt;
 
@@ -548,7 +549,6 @@ The main two actions a stack performs is pushing and poping. You push something 
 
 &lt;p&gt;&lt;strong&gt;Image does here&lt;/strong&gt;&lt;/p&gt;
 
-&lt;h2 id=&quot;queues&quot;&gt;Queues&lt;/h2&gt;
 &lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;java.util.LinkedList&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
 &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;java.util.Queue&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
 

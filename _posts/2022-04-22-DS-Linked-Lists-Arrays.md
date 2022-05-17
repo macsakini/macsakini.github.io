@@ -1,6 +1,7 @@
 ---
 category: Data Structures
 tags: dsa
+classes: wide
 ---
 
 Data Structures - Linked Lists, Arrays, Hashmap

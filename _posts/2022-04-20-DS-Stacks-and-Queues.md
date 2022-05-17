@@ -1,6 +1,7 @@
 ---
 category: Data Structures
 tags: dsa
+classes: wide
 ---
 
 Data Structures - Stacks and Queues in Java.
@@ -65,6 +66,7 @@ public class stacky {
     }
 }
 ```
+## Queues
 
 The queue is just stacks wacky brother. Same concept except the queue is an actual groceries shop queue or the line at the hospital. So whoever walked in first, gets served first. This is an interesting principle called FIFO: First In First Out. 
 
@@ -72,7 +74,6 @@ The actions that describe a queue at best are enqueue and dequeue. However, Java
 
 __Image does here__
 
-## Queues
 ```java
 import java.util.LinkedList;
 import java.util.Queue;

@@ -334,34 +334,7 @@
 
       <section class="page__content e-content" itemprop="text">
         
-        <h1 align="center">Coming Soon ...</h1>
-
-<div class="cards">
-  <div class="card">
-    <h5>BERT RL</h5>
-    <p>This is a natural language processing model built to make analysis.</p>
-  </div>
-  <div class="card">
-    <h5>City Skylines</h5>
-    <p>City skylines is a GIS project built with deep learning capabilities to analyse and make viable predictions on city trends.</p>
-  </div>
-  <div class="card">
-    <h5>Option Pricing</h5>
-  </div>
-  <div class="card">
-    <h5>Fractals Crack</h5>
-  </div>
-  <div class="card">
-    <h5>Blue Locator</h5>
-  </div>
-  <div class="card">
-    <h5>Sixers</h5>
-    <p>This is a natural language processing model built to make analysis.</p>
-  </div>
-</div>
-
-<style>
-
+        <style>
 .card {
   background-color: black;
   color: white;
@@ -386,52 +359,153 @@
 }
 </style>
 
-<h1 align="left">This section of the site is under construction ...</h1>
+<h1 align="center">City Skylines</h1>
 <p><br /></p>
 
-<p><img src="/assets/images/cityskylines/Slide1.jpeg" alt="City Skylines" /></p>
+<p align="center"> <img src="/assets/images/cityskylines/Slide1.jpeg" /></p>
 
-<p>Title</p>
+<p>A project of this stature requires a lot of data mining. We need to gather from very many different sources to capture all the dynamics of a city. The city under demonstration is Nairobi but more shall be done on other cities such as London and Tokyo.</p>
 
-<p><img src="/assets/images/cityskylines/Slide2.jpeg" alt="City Skylines" /></p>
+<p align="center"> <img src="/assets/images/cityskylines/Slide2.jpeg" /></p>
 
-<p>Plain Map</p>
+<h2 align="center">Demographics</h2>
 
-<p><img src="/assets/images/cityskylines/Slide3.jpeg" alt="City Skylines" /></p>
+<h2 id="population">Population</h2>
+<ul>
+  <li>Divide the sub counties into sublocations.</li>
+  <li>We have population data of sublocations in 2009.</li>
+  <li>We have population data of sub-counties in 2019.</li>
+  <li>Find the percentage increase between sub-counties and use this to expand on sublocations for 2019.</li>
+</ul>
 
-<p>Nairobi Borders defined</p>
+<p align="center"> <img src="/assets/images/cityskylines/Slide11.jpeg" /></p>
 
-<p><img src="/assets/images/cityskylines/Slide4.jpeg" alt="City Skylines" /></p>
+<h2 id="population-density">Population Density</h2>
+<ul>
+  <li>Having population data, for both 2009 and 2019 and the area in square kilometers. We can calculate the population density.</li>
+</ul>
 
-<p>Defining road network</p>
+<h2 id="area-of-point-of-interest">Area of Point of interest.</h2>
+<ul>
+  <li>We have the area of each sublocation and subcounty ready. Spatial data rarely changes.</li>
+</ul>
 
-<p><img src="/assets/images/cityskylines/Slide5.jpeg" alt="City Skylines" /></p>
+<p align="center"> <img src="/assets/images/cityskylines/Slide3.jpeg" /></p>
 
-<p>Adding roads to target locations</p>
+<h2 align="center">Spatial Analysis</h2>
 
-<p><img src="/assets/images/cityskylines/Slide6.jpeg" alt="City Skylines" /></p>
+<h2 id="points-of-interest">Points of Interest</h2>
+<ul>
+  <li>Clip the points using the clip-layer function.</li>
+</ul>
 
-<p>Defining target location.</p>
+<p align="center"> <img src="/assets/images/cityskylines/Slide8.jpeg" /></p>
 
-<p><img src="/assets/images/cityskylines/Slide7.jpeg" alt="City Skylines" /></p>
+<ul>
+  <li>Points include churches, schools, malls, barber shops, restaurants, anything listed in the OSM data as point.</li>
+</ul>
 
-<p>Zoom to layer and add points of interest</p>
+<p align="center"> <img src="/assets/images/cityskylines/Slide9.jpeg" /></p>
 
-<p><img src="/assets/images/cityskylines/Slide8.jpeg" alt="City Skylines" /></p>
+<ul>
+  <li>Find their total counts per sublocation i.e., Zimmerman – 100 points, Karen- 300 points.</li>
+  <li>Find their counts per type. i.e., Churches – 10, Schools -20.</li>
+</ul>
 
-<p>Closer view of points and demographics.</p>
+<p align="center"> <img src="/assets/images/cityskylines/Slide7.jpeg" /></p>
 
-<p><img src="/assets/images/cityskylines/Slide9.jpeg" alt="City Skylines" /></p>
+<h2 id="area-covered-by-buildings">Area covered by buildings.</h2>
+<ul>
+  <li>Total area size in a sublocation covered by buildings</li>
+</ul>
 
-<p>Church point clicked.</p>
+<h2 id="road-cover">Road cover.</h2>
+<p align="center"> <img src="/assets/images/cityskylines/Slide4.jpeg" /></p>
 
-<p><img src="/assets/images/cityskylines/Slide10.jpeg" alt="City Skylines" /></p>
+<p align="center"> <img src="/assets/images/cityskylines/Slide5.jpeg" /></p>
 
-<p>Parsing scraped data to find purchasing power of location.</p>
+<ul>
+  <li>Total area of sublocation covered by roads.
+    <h2 id="land-cover">Land Cover</h2>
+  </li>
+  <li>Can be calculated if available.
+    <h2 id="slope-of-the-area">Slope of the area.</h2>
+  </li>
+  <li>What is the slope coefficient of the area?</li>
+</ul>
 
-<p><img src="/assets/images/cityskylines/Slide11.jpeg" alt="City Skylines" /></p>
+<h2 align="center">Economics</h2>
 
-<p>Establishing population, area and population density of area.</p>
+<h2 id="land-prices">Land Prices.</h2>
+<ul>
+  <li>Price of land per acre in region.</li>
+  <li>Scraped data from Jiji, PigiaMe and The Star.</li>
+</ul>
+
+<p align="center"> <img src="/assets/images/cityskylines/Slide10.jpeg" /></p>
+
+<h2 id="rental-prices">Rental prices.</h2>
+<ul>
+  <li>Average rental price for a two-bedroom house in the region.
+    <h2 id="type-of-area">Type of area.</h2>
+  </li>
+  <li>Is the area residential, suburb, mixed, occupational?</li>
+</ul>
+
+<p align="center"> <img src="/assets/images/cityskylines/Slide6.jpeg" /></p>
+
+<h2 align="center">Accessibility (Only for available OSM way ID)</h2>
+
+<h2 id="travel-times">Travel Times.</h2>
+<ul>
+  <li>Traffic experienced in the area.
+    <h2 id="roads">Roads</h2>
+  </li>
+  <li>Road size. Is it a major highway? How many lanes is the major road in said sublocation? What is OSM ID.</li>
+  <li>Can uber data help better model this data. CBD is the point of reference.</li>
+  <li>Travel in the morning at 6.00, 9.00, 12.00.</li>
+  <li>Travel in the evening at 3.00, 6.00, 9.00</li>
+</ul>
+
+<h2 align="center">Imagery</h2>
+
+<h2 id="image-processing-of-area">Image processing of area.</h2>
+<ul>
+  <li>30 images from each area. Picked randomly. This can be done from Instagram, twitter and fakebook. TBD</li>
+</ul>
+
+<h2 align="center">Social Thoughts</h2>
+
+<h2 id="lda-and-pca-analysis-of-tweets">LDA and PCA analysis of tweets.</h2>
+<ul>
+  <li>Most common words related to a specific area.</li>
+  <li>If Twitter API allows, this can be done quite comfortably.</li>
+</ul>
+
+<h1 align="center">Coming Soon ...</h1>
+<div class="cards">
+  <div class="card">
+    <h5>BERT RL</h5>
+    <p>This is a natural language processing model built to make analysis.</p>
+  </div>
+  <div class="card">
+    <h5>City Skylines</h5>
+    <p>City skylines is a GIS project built with deep learning capabilities to analyse and make viable predictions on city trends.</p>
+  </div>
+  <div class="card">
+    <h5>Option Pricing</h5>
+  </div>
+  <div class="card">
+    <h5>Fractals Crack</h5>
+  </div>
+  <div class="card">
+    <h5>Blue Locator</h5>
+  </div>
+  <div class="card">
+    <h5>Sixers</h5>
+    <p>This is a natural language processing model built to make analysis.</p>
+  </div>
+</div>
 
         
       </section>
