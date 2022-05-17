@@ -1,3 +1,6 @@
+---
+category: Linear Algebra
+---
 Now, lets talk about something else apart from the binomial distribution. Say you have a circle, and you want to drop balls over it. One by one you drop a ball over the circle, say dish. The question is how many balls are gonna go inside it.
 
 As a mathematician, anything that involves circles or curves or anything circul-ish should bring to your mind the symbol $$ \pi $$. PI is a lot of things but just understanding that somehow a circle would be involved makes the whole thing wrapped up. Next the field around the circle most cases is usually a square. Look at the diagram below.

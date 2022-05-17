@@ -1,5 +1,6 @@
 ---
 classes: wide
+category: Financial Modelling
 ---
 
 Option Analysis and Prediction using Fast Fourier Transform and Levy Alpha Stable Distributions

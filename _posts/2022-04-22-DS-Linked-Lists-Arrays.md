@@ -1,3 +1,8 @@
+---
+category: Data Structures
+tags: dsa
+---
+
 Data Structures - Linked Lists, Arrays, Hashmap
 
 This is a collection of some of the most fundamental data structures and functions done in Java.

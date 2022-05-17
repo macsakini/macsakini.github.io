@@ -1,5 +1,7 @@
 ---
 toc : true
+category: Linear Algebra
+
 ---
 Linear Algebra Series 1 - Introduction
 

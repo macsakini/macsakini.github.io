@@ -1,3 +1,8 @@
+---
+category: Data Structures
+tags: dsa
+---
+
 Data Structures - Stacks and Queues in Java.
 
 ## Stacks

@@ -1,3 +1,6 @@
+---
+category: Linear Algebra
+---
 Linear Algebra Series 2 - Linear Independence and Dependence
 
 I will try to avoid math, so test 1, 

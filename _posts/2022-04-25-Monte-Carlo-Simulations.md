@@ -1,3 +1,7 @@
+---
+category: Linear Algebra
+---
+
 ## What are Monte Carlo Simulation?
 
 I know, I know, it looks like a guy's name. Well nope it isn't. Monte Carlo is a place. I always thought it Montreal. I wasn't so wrong. They kinda both start with M, and, hear me out, the both in Canada. Monte Carlo is a town known for its many casinos. So many, so so many and what is it about about casinos, there is a lot of betting. Now betting is super random. I mean, yes, there are odds, but they remain odds, they could blantantly go the other way. But something interesting is that even with the most random of stuff in our universe, there is still some sort of pattern. This pattern however, is hard to notice with a single or even few number of tries. 

@@ -1,1 +1,0 @@
-The best solutions for each scenario. How better can we improve a system. One way of tackling this is through simulation. 

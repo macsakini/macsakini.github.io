@@ -1,3 +1,6 @@
+---
+category: Financial Modelling
+---
 Modality and Seasonality on Security Prices in the DOW
 
 The data in the data folder is temporal and thus the models to be used are time series models. The analysis is not geared towards prediction but is focused on finding the right parameters and metrics that best decsribes these datasets. It is also geared by finding which of the time series approaches used in project is more powerful, compact and accurate compared to the other.

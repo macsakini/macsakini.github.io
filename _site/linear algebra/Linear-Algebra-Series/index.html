@@ -1,0 +1,841 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Linear Algebra Series   Mac Code</title>
+<meta name="description" content="Linear Algebra Series 1 - Introduction">
+
+
+  <meta name="author" content="Mac Maxwell">
+  
+  <meta property="article:author" content="Mac Maxwell">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Mac Code">
+<meta property="og:title" content="Linear Algebra Series">
+<meta property="og:url" content="http://localhost:4000/linear%20algebra/Linear-Algebra-Series/">
+
+
+  <meta property="og:description" content="Linear Algebra Series 1 - Introduction">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2022-04-24T00:00:00+03:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/linear%20algebra/Linear-Algebra-Series/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "Mac Maxwell",
+      "url": "http://localhost:4000/"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Mac Code Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+          <a class="site-logo" href="/"><img src="https://media.istockphoto.com/photos/abstract-3d-render-of-triangle-picture-id1289515110?b=1&k=20&m=1289515110&s=170667a&w=0&h=NM9B-P3evH-Go1mZ1GtWFQZ4Hqtipuu90EO5ceRBeho=" alt="Mac Code"></a>
+        
+        <a class="site-title" href="/">
+          Mac Code
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/_pages/home/">Home</a>
+            </li><li class="masthead__menu-item">
+              <a href="/">Blog</a>
+            </li><li class="masthead__menu-item">
+              <a href="/_pages/cv/">Resume</a>
+            </li><li class="masthead__menu-item">
+              <a href="/_pages/portfolio/">Portfolio</a>
+            </li><li class="masthead__menu-item">
+              <a href="/_pages/publications/">Publications</a>
+            </li><li class="masthead__menu-item">
+              <a href="/_pages/contact/">Contact Me</a>
+            </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <i class="fas fa-search"></i>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+  
+    
+
+
+
+<nav class="breadcrumbs">
+  <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+    
+    
+    
+      
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="/" itemprop="item"><span itemprop="name">Home</span></a>
+
+          <meta itemprop="position" content="1" />
+        </li>
+        <span class="sep">/</span>
+      
+      
+        
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="/categories/#linear-algebra" itemprop="item"><span itemprop="name">Linear algebra</span></a>
+          <meta itemprop="position" content="2" />
+        </li>
+        <span class="sep">/</span>
+      
+    
+      
+      
+        <li class="current">Linear Algebra Series</li>
+      
+    
+  </ol>
+</nav>
+
+  
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person" class="h-card">
+
+  
+    <div class="author__avatar">
+      <a href="http://localhost:4000/">
+        <img src="https://avatars.githubusercontent.com/u/47692036?s=400&u=102797acf8ca76fa31a3bcf38afd98e238168b37&v=4" alt="Mac Maxwell" itemprop="image" class="u-photo">
+      </a>
+    </div>
+  
+
+  <div class="author__content">
+    <h3 class="author__name p-name" itemprop="name">
+      <a class="u-url" rel="me" href="http://localhost:4000/" itemprop="url">Mac Maxwell</a>
+    </h3>
+    
+      <div class="author__bio p-note" itemprop="description">
+        <p>CS + Math @ UoN, SD @ Rarelane. Aspiring member of the LMS.</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name" class="p-locality">Nairobi, Kenya.</span>
+        </li>
+      
+
+      
+        
+          
+            <li><a href="mailto:macsakini@hotmail.com" rel="nofollow noopener noreferrer me"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">macsakini@hotmail.com</span></a></li>
+          
+        
+          
+            <li><a href="https://www.rarelane.co.uk" rel="nofollow noopener noreferrer me"><i class="fas fa-fw fa-link" aria-hidden="true"></i><span class="label">https://www.rarelane.co.uk</span></a></li>
+          
+        
+          
+            <li><a href="https://www.linkedin.com/in/macsakini/" rel="nofollow noopener noreferrer me"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span class="label">Linkedin</span></a></li>
+          
+        
+          
+        
+          
+            <li><a href="https://github.com/macsakini" rel="nofollow noopener noreferrer me"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">Mac Maxwell</span></a></li>
+          
+        
+          
+            <li><a href="https://www.researchgate.net/profile/Mac-Maxwell" rel="nofollow noopener noreferrer me"><i class="fab fa-fw fa-instagram" aria-hidden="true"></i><span class="label">Researchgate</span></a></li>
+          
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer me">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+  
+  </div>
+
+
+
+  <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Linear Algebra Series">
+    <meta itemprop="description" content="Linear Algebra Series 1 - Introduction">
+    <meta itemprop="datePublished" content="2022-04-24T00:00:00+03:00">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title p-name" itemprop="headline">
+            <a href="http://localhost:4000/linear%20algebra/Linear-Algebra-Series/" class="u-url" itemprop="url">Linear Algebra Series
+</a>
+          </h1>
+          
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          5 minute read
+        
+      </span>
+    
+  </p>
+
+
+        </header>
+      
+
+      <section class="page__content e-content" itemprop="text">
+        
+          <aside class="sidebar__right ">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On this page</h4></header>
+              <ul class="toc__menu"><li><a href="#basic-operations-on-matrices">Basic Operations on Matrices</a></li><li><a href="#finding-the-eigenvalues-and-eigenvectors">Finding the Eigenvalues and Eigenvectors</a></li><li><a href="#lets-talk-about-matrix-decomposition">Lets talk about matrix decomposition</a><ul><li><a href="#lu-decomposition">LU Decomposition</a></li><li><a href="#singular-value-decomposition">Singular Value Decomposition</a><ul><li><a href="#find-the-orthonormal-basis-for-a-using-svd">Find the orthonormal basis for A using SVD</a></li><li><a href="#finds-the-orthonormal-basis-for-the-null_space-using-svd">Finds the orthonormal basis for the null_space using SVD</a></li></ul></li><li><a href="#polar-decomposition">Polar Decomposition</a></li></ul></li><li><a href="#matrix-can-also-be-considered-as-regular-numbers-with-regular-applications">Matrix can also be considered as regular numbers with regular applications.</a></li></ul>
+
+            </nav>
+          </aside>
+        
+        <p>Linear Algebra Series 1 - Introduction</p>
+
+<p>This particular blog post will cover at large the basics of linear algebra and how to understand it in thirty minutes. Cap. I would give me a year😬.</p>
+
+<p>We are gonna use a lot of Python for the computations so be ready to do some nice copy paste. The first section involves importing all necessary libraries into the workspace. In this case they are only two:🥲. Our star library for today is the <strong>SciPy</strong> library which will mostly deal with scientific calculations and as such scientific subjects, disciples, I mean disciplines, notations, et al….</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="n">np</span>
+<span class="kn">import</span> <span class="nn">scipy.linalg</span> <span class="k">as</span> <span class="n">sp</span>
+</code></pre></div></div>
+<p>Follow by, creating a matrix using the array function by numpy. The formula remains standard 😊 <strong>RC which is Roman Catholic which means Rows then Columns</strong></p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">],[</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">],[</span><span class="mi">7</span><span class="p">,</span><span class="mi">88</span><span class="p">,</span><span class="mi">9</span><span class="p">]])</span>
+<span class="n">b</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">],[</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">],[</span><span class="mi">7</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">9</span><span class="p">]])</span>
+</code></pre></div></div>
+<h2 id="basic-operations-on-matrices">Basic Operations on Matrices</h2>
+
+<p><strong>Finding the determinant.</strong> NOTE:= The determinant is a scalar value. 
+Say we have a matrix A = [[a,b],[c,d]]:
+We find the detriminant using the formula \(Det(A) = (a*d)-(c*b)\). The determinant and <strong>this is not a formal definition</strong>, can be thought of as the “volume” of the space occupied by the matrix.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">sp</span><span class="p">.</span><span class="n">det</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+</code></pre></div></div>
+<p>If the determinant is zero, this matrix becomes a <strong>singular matrix</strong>. Otherwise, it is just a regular square matrix. I say square as there exist other types of Matrices, but these will be discussed in other sections of the series.</p>
+
+<p><strong>B</strong> is an example singular matrix. Ensure to test with B as well, in place of A, just to get a feel of the concept.</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Next, we can find the norm of the matrix :=</td>
+      <td>A</td>
+      <td>. Similar to any vector, matrices have a norm which is just their magnitude (size).</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>The norm of the matrix can be derived using the norm function.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">sp</span><span class="p">.</span><span class="n">norm</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>The inverse of the matrix. As the word implies, is the alternative matrix in the opposite, say what, “direction” but orthogonally. Putting it in another way, interchange a and d, give b and c, negative signs and “vwaalah” inverse.
+[[a,b],[c,d]] \ \Longrightarrow \ [[d,-b], [-c,a]]. However, a more formal way of doing it is using the inv function provided by SciPy. Mathematicians, use a matrix of signs to find the inverse for bigger matrices. 3 x 3, 4 x 4 and the gang.</p>
+
+<p>Note a singular matrix, does not have an inverse.</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">try</span><span class="p">:</span>
+  <span class="k">print</span><span class="p">(</span><span class="n">sp</span><span class="p">.</span><span class="n">inv</span><span class="p">(</span><span class="n">a</span><span class="p">))</span>
+<span class="k">except</span><span class="p">:</span>
+  <span class="k">print</span><span class="p">(</span><span class="s">"This matrix is a singular matrix"</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h2 id="finding-the-eigenvalues-and-eigenvectors">Finding the Eigenvalues and Eigenvectors</h2>
+<p>This section just shows the way of finding the eigen’s using SciPy. However, I will add a link down below to an exclusive post, fully focused, on what these are, how the help and where to use them. They carry a major role in CS, Physics, Chemistry… as such they are very important.</p>
+
+<p>Finding the eigenvalues and eigenvectors.</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">sp</span><span class="p">.</span><span class="n">eig</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+</code></pre></div></div>
+<p>This specifically prints out the eigenvalues.</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">sp</span><span class="p">.</span><span class="n">eigvals</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+</code></pre></div></div>
+<h2 id="lets-talk-about-matrix-decomposition">Lets talk about matrix decomposition</h2>
+<p>There are so many ways of decomposing a matrix. Name a few, LU, QR, QZ, Polar, SVD and so much more. You are probably wondering, who are all these Chinese babies. However, i will disappoint you, these are decomposition styles. I will cover only the most important among these.</p>
+
+<p>They all try to achieve the same task: make matrix computations easier. Think of decomposition as making matrices into <strong>legos</strong>. The matrix doesn’t loose its end value, we just break it into pieces, that when we remap together reform the broken down matrix. This happens so that they can be used in Ninjago and be used differently and more efficiently at various tasks. Imagine, 9 is a matrix, if I break it into 4 and 5 or even 2, 4 and 3, we havent really changed the 9. I have just broken it down or <strong>decomposed</strong> it into a number of values. Decomposition is somewhat similar, not direct, yes, but somewhat similar.</p>
+
+<h3 id="lu-decomposition">LU Decomposition</h3>
+<p>This is a pivoted LU decomposition.</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">lu</span> <span class="o">=</span> <span class="n">sp</span><span class="p">.</span><span class="n">lu</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+
+<span class="k">print</span><span class="p">(</span><span class="n">lu</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="s">"</span><span class="se">\n</span><span class="s">"</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">lu</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="s">"</span><span class="se">\n</span><span class="s">"</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">lu</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="s">"</span><span class="se">\n</span><span class="s">"</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">sp</span><span class="p">.</span><span class="n">lu_factor</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+</code></pre></div></div>
+<h3 id="singular-value-decomposition">Singular Value Decomposition</h3>
+<p>This is an SVD.</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">svd</span> <span class="o">=</span> <span class="n">sp</span><span class="p">.</span><span class="n">svd</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+
+<span class="k">print</span><span class="p">(</span><span class="n">svd</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="s">"</span><span class="se">\n</span><span class="s">"</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">svd</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="s">"</span><span class="se">\n</span><span class="s">"</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">svd</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="s">"</span><span class="se">\n</span><span class="s">"</span><span class="p">)</span>
+</code></pre></div></div>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">sp</span><span class="p">.</span><span class="n">svdvals</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+</code></pre></div></div>
+<h4 id="find-the-orthonormal-basis-for-a-using-svd">Find the orthonormal basis for A using SVD</h4>
+<p>Basis and orthonormal shall be covered in the next post. Be sure to head there.</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">sp</span><span class="p">.</span><span class="n">orth</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+</code></pre></div></div>
+<h4 id="finds-the-orthonormal-basis-for-the-null_space-using-svd">Finds the orthonormal basis for the null_space using SVD</h4>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">sp</span><span class="p">.</span><span class="n">null_space</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+</code></pre></div></div>
+<h3 id="polar-decomposition">Polar Decomposition</h3>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">sp</span><span class="p">.</span><span class="n">polar</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+</code></pre></div></div>
+<h2 id="matrix-can-also-be-considered-as-regular-numbers-with-regular-applications">Matrix can also be considered as regular numbers with regular applications.</h2>
+<p>This definitively means, you can carry out operations similar to those on real and natural numbers without any siginificant changes. A number of the operations include:</p>
+
+<ol>
+  <li>Finding the exponential of the matrix.
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">sp</span><span class="p">.</span><span class="n">expm</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+</code></pre></div>    </div>
+  </li>
+  <li>Finding the sine of the matrix.
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">sp</span><span class="p">.</span><span class="n">sinm</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+</code></pre></div>    </div>
+  </li>
+  <li>Finding the cosine.
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">sp</span><span class="p">.</span><span class="n">cosm</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+</code></pre></div>    </div>
+  </li>
+  <li>Finding the tangent of the matrix.
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">sp</span><span class="p">.</span><span class="n">tanm</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+</code></pre></div>    </div>
+  </li>
+  <li>Finding the square root of the matrix.
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">sp</span><span class="p">.</span><span class="n">sqrtm</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+</code></pre></div>    </div>
+  </li>
+  <li>And even applying a function to the matrix. For example, this is the dot product of the matrix.
+```python
+print(sp.funm(a, lambda x: x*x))</li>
+</ol>
+
+<p>print(“\n”)</p>
+
+<p>print(np.dot(a,a))</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+## There is a whole lot of special matrices. However i will just build a few to demonstrate.
+
+This creates a 3 by 3 hilbert matrix. Hilbert spaces have special characteristics coupled up with the Inner Product and the Banach Space and so on... but i will also discuss this in later sections and in full length. I mean, this is the introductory, you wouldn't want me on Banach Spaces, right.
+```python
+sp.hilbert(3)
+</code></pre></div></div>
+<p>Hadamard matrix is also a special matrix. Some arab guy made it. Its mostly used in quantum computations due to its nature of just being 1’s and -1’s, big deal, whoop. ITS A VERY BIG DEAL.🫡
+.They are used for the opening and closing of logic gates in quantum computers coupled with superposition which i will not even dare mention.</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">sp</span><span class="p">.</span><span class="n">hadamard</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span> 
+</code></pre></div></div>
+<p>This creates a discrete fourier transform matrix. FO-RII-EEEH.</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">sp</span><span class="p">.</span><span class="n">dft</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span> 
+</code></pre></div></div>
+<p>This creates a helmert matrix. Its kind of used with the hadamard, but do some research.</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">sp</span><span class="p">.</span><span class="n">helmert</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span> 
+</code></pre></div></div>
+
+<p>That mostly sums it up. This is an introductory session on using the scipy library to evaluate some of Linear Algebra’s most common functions. In the next, sections, I will get in deeper into the aforementioned topics, be there. Stay Tuned.😌</p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/categories/#linear-algebra" class="page__taxonomy-item p-category" rel="tag">Linear Algebra</a>
+    
+    </span>
+  </p>
+
+
+        
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time class="dt-published" datetime="2022-04-24T00:00:00+03:00">April 24, 2022</time></p>
+
+      </footer>
+
+      <section class="page__share">
+  
+    <h4 class="page__share-title">Share on</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?text=Linear+Algebra+Series%20http%3A%2F%2Flocalhost%3A4000%2Flinear%2520algebra%2FLinear-Algebra-Series%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Flinear%2520algebra%2FLinear-Algebra-Series%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Flinear%2520algebra%2FLinear-Algebra-Series%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/financial%20modelling/Modality-and-Seasonality-on-Security-Prices/" class="pagination--pager" title="Modality And  seasonality On Security Prices
+">Previous</a>
+    
+    
+      <a href="/financial%20modelling/Option-Pricing/" class="pagination--pager" title="Option Pricing
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h2 class="page__related-title">You may also enjoy</h2>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/linear%20algebra/Monte-Carlo-Simulations/" rel="permalink">Monte Carlo Simulations
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          2 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">What are Monte Carlo Simulation?
+
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/linear%20algebra/Monte-Carlo-Methods-2/" rel="permalink">Monte Carlo Methods 2
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          1 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Now, lets talk about something else apart from the binomial distribution. Say you have a circle, and you want to drop balls over it. One by one you drop a ba...</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/financial%20modelling/Option-Pricing/" rel="permalink">Option Pricing
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          2 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Option Analysis and Prediction using Fast Fourier Transform and Levy Alpha Stable Distributions
+
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/financial%20modelling/Modality-and-Seasonality-on-Security-Prices/" rel="permalink">Modality And  seasonality On Security Prices
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          2 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Modality and Seasonality on Security Prices in the DOW
+
+</p>
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+    </div>
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><form onsubmit="return googleCustomSearchExecute();" id="cse-search-box-form-id" role="search">
+    <label class="sr-only" for="cse-search-input-box-id">
+      Enter your search term...
+    </label>
+    <input type="search" id="cse-search-input-box-id" class="search-input" tabindex="-1" placeholder="Enter your search term..." />
+  </form>
+  <div id="results" class="results">
+    <gcse:searchresults-only></gcse:searchresults-only>
+  </div></div>
+
+      </div>
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2022 Mac Maxwell. Designed by <a href="https://jekyllrb.com" rel="nofollow">Rarelane Analytics</a></div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+<script>
+  (function () {
+    var cx = '';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+
+  function googleCustomSearchExecute() {
+    var input = document.getElementById('cse-search-input-box-id');
+    var element = google.search.cse.element.getElement('searchresults-only0');
+    if (input.value == '') {
+      element.clearAllResults();
+    } else {
+      element.execute(input.value);
+    }
+    return false;
+  }
+
+  
+</script>
+
+
+
+
+
+
+
+  </body>
+</html>
